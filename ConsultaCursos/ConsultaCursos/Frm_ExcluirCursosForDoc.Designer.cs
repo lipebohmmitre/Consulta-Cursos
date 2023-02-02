@@ -28,71 +28,41 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.Lbl_mostraIdCurso = new System.Windows.Forms.Label();
             this.Lbl_mostraNomeCurso = new System.Windows.Forms.Label();
             this.Lbl_mostraPeriodoCurso = new System.Windows.Forms.Label();
             this.Lbl_mostraCargaHoraria = new System.Windows.Forms.Label();
-            this.Btn_procurar = new System.Windows.Forms.Button();
-            this.Btn_fechar = new System.Windows.Forms.Button();
-            this.Btn_excluir = new System.Windows.Forms.Button();
             this.Txb_procurarCurso = new System.Windows.Forms.TextBox();
             this.Lv_exibeCurso = new System.Windows.Forms.ListView();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.Btn_procurar = new System.Windows.Forms.Button();
+            this.Btn_fechar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.Btn_procurarCursoAlterar = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.Btn_minimizar = new System.Windows.Forms.Button();
+            this.Btn_FecharApp = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Btn_excluir = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.Btn_alterar = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(30, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(183, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Digite o Curso que Deseja Excluir:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(41, 222);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 15);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "ID do Curso:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(41, 256);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(94, 15);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Nome do Curso:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(41, 294);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 15);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Período:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(41, 328);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(83, 15);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Carga Horária:";
             // 
             // Lbl_mostraIdCurso
             // 
             this.Lbl_mostraIdCurso.AutoSize = true;
-            this.Lbl_mostraIdCurso.Location = new System.Drawing.Point(184, 222);
+            this.Lbl_mostraIdCurso.Location = new System.Drawing.Point(148, 19);
             this.Lbl_mostraIdCurso.Name = "Lbl_mostraIdCurso";
             this.Lbl_mostraIdCurso.Size = new System.Drawing.Size(0, 15);
             this.Lbl_mostraIdCurso.TabIndex = 5;
@@ -100,7 +70,7 @@
             // Lbl_mostraNomeCurso
             // 
             this.Lbl_mostraNomeCurso.AutoSize = true;
-            this.Lbl_mostraNomeCurso.Location = new System.Drawing.Point(184, 256);
+            this.Lbl_mostraNomeCurso.Location = new System.Drawing.Point(148, 53);
             this.Lbl_mostraNomeCurso.Name = "Lbl_mostraNomeCurso";
             this.Lbl_mostraNomeCurso.Size = new System.Drawing.Size(0, 15);
             this.Lbl_mostraNomeCurso.TabIndex = 6;
@@ -108,7 +78,7 @@
             // Lbl_mostraPeriodoCurso
             // 
             this.Lbl_mostraPeriodoCurso.AutoSize = true;
-            this.Lbl_mostraPeriodoCurso.Location = new System.Drawing.Point(184, 294);
+            this.Lbl_mostraPeriodoCurso.Location = new System.Drawing.Point(148, 91);
             this.Lbl_mostraPeriodoCurso.Name = "Lbl_mostraPeriodoCurso";
             this.Lbl_mostraPeriodoCurso.Size = new System.Drawing.Size(0, 15);
             this.Lbl_mostraPeriodoCurso.TabIndex = 7;
@@ -116,99 +86,406 @@
             // Lbl_mostraCargaHoraria
             // 
             this.Lbl_mostraCargaHoraria.AutoSize = true;
-            this.Lbl_mostraCargaHoraria.Location = new System.Drawing.Point(184, 328);
+            this.Lbl_mostraCargaHoraria.Location = new System.Drawing.Point(148, 125);
             this.Lbl_mostraCargaHoraria.Name = "Lbl_mostraCargaHoraria";
             this.Lbl_mostraCargaHoraria.Size = new System.Drawing.Size(0, 15);
             this.Lbl_mostraCargaHoraria.TabIndex = 8;
             // 
-            // Btn_procurar
-            // 
-            this.Btn_procurar.Location = new System.Drawing.Point(633, 22);
-            this.Btn_procurar.Name = "Btn_procurar";
-            this.Btn_procurar.Size = new System.Drawing.Size(75, 23);
-            this.Btn_procurar.TabIndex = 9;
-            this.Btn_procurar.Text = "Procurar";
-            this.Btn_procurar.UseVisualStyleBackColor = true;
-            this.Btn_procurar.Click += new System.EventHandler(this.Btn_procurar_Click);
-            // 
-            // Btn_fechar
-            // 
-            this.Btn_fechar.Location = new System.Drawing.Point(714, 22);
-            this.Btn_fechar.Name = "Btn_fechar";
-            this.Btn_fechar.Size = new System.Drawing.Size(75, 23);
-            this.Btn_fechar.TabIndex = 10;
-            this.Btn_fechar.Text = "Fechar";
-            this.Btn_fechar.UseVisualStyleBackColor = true;
-            this.Btn_fechar.Click += new System.EventHandler(this.Btn_fechar_Click);
-            // 
-            // Btn_excluir
-            // 
-            this.Btn_excluir.Location = new System.Drawing.Point(392, 257);
-            this.Btn_excluir.Name = "Btn_excluir";
-            this.Btn_excluir.Size = new System.Drawing.Size(110, 77);
-            this.Btn_excluir.TabIndex = 11;
-            this.Btn_excluir.Text = "Apagar";
-            this.Btn_excluir.UseVisualStyleBackColor = true;
-            this.Btn_excluir.Click += new System.EventHandler(this.Btn_excluir_Click);
-            // 
             // Txb_procurarCurso
             // 
-            this.Txb_procurarCurso.Location = new System.Drawing.Point(219, 22);
+            this.Txb_procurarCurso.Location = new System.Drawing.Point(215, 22);
             this.Txb_procurarCurso.Name = "Txb_procurarCurso";
             this.Txb_procurarCurso.Size = new System.Drawing.Size(399, 23);
             this.Txb_procurarCurso.TabIndex = 12;
             // 
             // Lv_exibeCurso
             // 
-            this.Lv_exibeCurso.Location = new System.Drawing.Point(12, 55);
+            this.Lv_exibeCurso.Location = new System.Drawing.Point(13, 83);
             this.Lv_exibeCurso.Name = "Lv_exibeCurso";
             this.Lv_exibeCurso.Size = new System.Drawing.Size(776, 97);
             this.Lv_exibeCurso.TabIndex = 13;
             this.Lv_exibeCurso.UseCompatibleStateImageBehavior = false;
             this.Lv_exibeCurso.DoubleClick += new System.EventHandler(this.Lv_exibeCurso_DoubleClick);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.panel1.Controls.Add(this.Btn_procurar);
+            this.panel1.Controls.Add(this.Btn_fechar);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.Txb_procurarCurso);
+            this.panel1.Controls.Add(this.Btn_procurarCursoAlterar);
+            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.Btn_minimizar);
+            this.panel1.Controls.Add(this.Btn_FecharApp);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Location = new System.Drawing.Point(2, -1);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(799, 78);
+            this.panel1.TabIndex = 17;
+            // 
+            // Btn_procurar
+            // 
+            this.Btn_procurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Btn_procurar.BackColor = System.Drawing.Color.Moccasin;
+            this.Btn_procurar.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Btn_procurar.FlatAppearance.BorderSize = 0;
+            this.Btn_procurar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.Btn_procurar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Goldenrod;
+            this.Btn_procurar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_procurar.ForeColor = System.Drawing.Color.Black;
+            this.Btn_procurar.Location = new System.Drawing.Point(630, 15);
+            this.Btn_procurar.Name = "Btn_procurar";
+            this.Btn_procurar.Size = new System.Drawing.Size(69, 34);
+            this.Btn_procurar.TabIndex = 21;
+            this.Btn_procurar.Text = "Procurar";
+            this.Btn_procurar.UseVisualStyleBackColor = false;
+            this.Btn_procurar.Click += new System.EventHandler(this.Btn_procurar_Click_1);
+            // 
+            // Btn_fechar
+            // 
+            this.Btn_fechar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Btn_fechar.BackColor = System.Drawing.Color.Moccasin;
+            this.Btn_fechar.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Btn_fechar.FlatAppearance.BorderSize = 0;
+            this.Btn_fechar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.Btn_fechar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Goldenrod;
+            this.Btn_fechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_fechar.ForeColor = System.Drawing.Color.Black;
+            this.Btn_fechar.Location = new System.Drawing.Point(717, 15);
+            this.Btn_fechar.Name = "Btn_fechar";
+            this.Btn_fechar.Size = new System.Drawing.Size(69, 34);
+            this.Btn_fechar.TabIndex = 20;
+            this.Btn_fechar.Text = "Fechar";
+            this.Btn_fechar.UseVisualStyleBackColor = false;
+            this.Btn_fechar.Click += new System.EventHandler(this.Btn_fechar_Click_1);
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.BackColor = System.Drawing.Color.Moccasin;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Goldenrod;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(1242, 15);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(69, 34);
+            this.button1.TabIndex = 19;
+            this.button1.Text = "Procurar";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.BackColor = System.Drawing.Color.Moccasin;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Goldenrod;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.Color.Black;
+            this.button2.Location = new System.Drawing.Point(1317, 15);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(69, 34);
+            this.button2.TabIndex = 18;
+            this.button2.Text = "Fechar";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // Btn_procurarCursoAlterar
+            // 
+            this.Btn_procurarCursoAlterar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Btn_procurarCursoAlterar.BackColor = System.Drawing.Color.Moccasin;
+            this.Btn_procurarCursoAlterar.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Btn_procurarCursoAlterar.FlatAppearance.BorderSize = 0;
+            this.Btn_procurarCursoAlterar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.Btn_procurarCursoAlterar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Goldenrod;
+            this.Btn_procurarCursoAlterar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_procurarCursoAlterar.ForeColor = System.Drawing.Color.Black;
+            this.Btn_procurarCursoAlterar.Location = new System.Drawing.Point(1812, 15);
+            this.Btn_procurarCursoAlterar.Name = "Btn_procurarCursoAlterar";
+            this.Btn_procurarCursoAlterar.Size = new System.Drawing.Size(69, 34);
+            this.Btn_procurarCursoAlterar.TabIndex = 17;
+            this.Btn_procurarCursoAlterar.Text = "Procurar";
+            this.Btn_procurarCursoAlterar.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button3.BackColor = System.Drawing.Color.Moccasin;
+            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Goldenrod;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.Color.Black;
+            this.button3.Location = new System.Drawing.Point(1887, 15);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(69, 34);
+            this.button3.TabIndex = 16;
+            this.button3.Text = "Fechar";
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // button4
+            // 
+            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button4.BackColor = System.Drawing.Color.Moccasin;
+            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Goldenrod;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ForeColor = System.Drawing.Color.Black;
+            this.button4.Location = new System.Drawing.Point(2373, 15);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(69, 34);
+            this.button4.TabIndex = 16;
+            this.button4.Text = "Procurar";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // button5
+            // 
+            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button5.BackColor = System.Drawing.Color.Moccasin;
+            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Goldenrod;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.ForeColor = System.Drawing.Color.Black;
+            this.button5.Location = new System.Drawing.Point(2459, 15);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(69, 34);
+            this.button5.TabIndex = 15;
+            this.button5.Text = "Fechar";
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // Btn_minimizar
+            // 
+            this.Btn_minimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Btn_minimizar.BackColor = System.Drawing.Color.Moccasin;
+            this.Btn_minimizar.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Btn_minimizar.FlatAppearance.BorderSize = 0;
+            this.Btn_minimizar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.Btn_minimizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Goldenrod;
+            this.Btn_minimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_minimizar.ForeColor = System.Drawing.Color.Black;
+            this.Btn_minimizar.Location = new System.Drawing.Point(2907, 11);
+            this.Btn_minimizar.Name = "Btn_minimizar";
+            this.Btn_minimizar.Size = new System.Drawing.Size(69, 34);
+            this.Btn_minimizar.TabIndex = 5;
+            this.Btn_minimizar.Text = "Minimizar";
+            this.Btn_minimizar.UseVisualStyleBackColor = false;
+            // 
+            // Btn_FecharApp
+            // 
+            this.Btn_FecharApp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Btn_FecharApp.BackColor = System.Drawing.Color.Moccasin;
+            this.Btn_FecharApp.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Btn_FecharApp.FlatAppearance.BorderSize = 0;
+            this.Btn_FecharApp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.Btn_FecharApp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Goldenrod;
+            this.Btn_FecharApp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_FecharApp.ForeColor = System.Drawing.Color.Black;
+            this.Btn_FecharApp.Location = new System.Drawing.Point(2982, 11);
+            this.Btn_FecharApp.Name = "Btn_FecharApp";
+            this.Btn_FecharApp.Size = new System.Drawing.Size(69, 34);
+            this.Btn_FecharApp.TabIndex = 4;
+            this.Btn_FecharApp.Text = "Fechar";
+            this.Btn_FecharApp.UseVisualStyleBackColor = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(11, 25);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(183, 15);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Digite o Curso que Deseja Excluir:";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.groupBox1.Controls.Add(this.Btn_excluir);
+            this.groupBox1.Controls.Add(this.button6);
+            this.groupBox1.Controls.Add(this.Btn_alterar);
+            this.groupBox1.Controls.Add(this.button7);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.Lbl_mostraCargaHoraria);
+            this.groupBox1.Controls.Add(this.label10);
+            this.groupBox1.Controls.Add(this.Lbl_mostraPeriodoCurso);
+            this.groupBox1.Controls.Add(this.label12);
+            this.groupBox1.Controls.Add(this.Lbl_mostraNomeCurso);
+            this.groupBox1.Controls.Add(this.label13);
+            this.groupBox1.Controls.Add(this.Lbl_mostraIdCurso);
+            this.groupBox1.Location = new System.Drawing.Point(127, 227);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(557, 179);
+            this.groupBox1.TabIndex = 18;
+            this.groupBox1.TabStop = false;
+            // 
+            // Btn_excluir
+            // 
+            this.Btn_excluir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Btn_excluir.BackColor = System.Drawing.Color.Moccasin;
+            this.Btn_excluir.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Btn_excluir.FlatAppearance.BorderSize = 0;
+            this.Btn_excluir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.Btn_excluir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Goldenrod;
+            this.Btn_excluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_excluir.ForeColor = System.Drawing.Color.Black;
+            this.Btn_excluir.Location = new System.Drawing.Point(368, 53);
+            this.Btn_excluir.Name = "Btn_excluir";
+            this.Btn_excluir.Size = new System.Drawing.Size(84, 75);
+            this.Btn_excluir.TabIndex = 20;
+            this.Btn_excluir.Text = "Apagar";
+            this.Btn_excluir.UseVisualStyleBackColor = false;
+            this.Btn_excluir.Click += new System.EventHandler(this.Btn_excluir_Click_1);
+            // 
+            // button6
+            // 
+            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button6.BackColor = System.Drawing.Color.Moccasin;
+            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Goldenrod;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.ForeColor = System.Drawing.Color.Black;
+            this.button6.Location = new System.Drawing.Point(713, 45);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(84, 75);
+            this.button6.TabIndex = 19;
+            this.button6.Text = "Excluir";
+            this.button6.UseVisualStyleBackColor = false;
+            // 
+            // Btn_alterar
+            // 
+            this.Btn_alterar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Btn_alterar.BackColor = System.Drawing.Color.Moccasin;
+            this.Btn_alterar.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.Btn_alterar.FlatAppearance.BorderSize = 0;
+            this.Btn_alterar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.Btn_alterar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Goldenrod;
+            this.Btn_alterar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_alterar.ForeColor = System.Drawing.Color.Black;
+            this.Btn_alterar.Location = new System.Drawing.Point(1141, 71);
+            this.Btn_alterar.Name = "Btn_alterar";
+            this.Btn_alterar.Size = new System.Drawing.Size(59, 54);
+            this.Btn_alterar.TabIndex = 18;
+            this.Btn_alterar.Text = "Alterar";
+            this.Btn_alterar.UseVisualStyleBackColor = false;
+            // 
+            // button7
+            // 
+            this.button7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button7.BackColor = System.Drawing.Color.Moccasin;
+            this.button7.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Goldenrod;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.ForeColor = System.Drawing.Color.Black;
+            this.button7.Location = new System.Drawing.Point(1504, 71);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(59, 54);
+            this.button7.TabIndex = 17;
+            this.button7.Text = "Alterar";
+            this.button7.UseVisualStyleBackColor = false;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(35, 19);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(72, 15);
+            this.label7.TabIndex = 10;
+            this.label7.Text = "ID do Curso:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(35, 53);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(94, 15);
+            this.label10.TabIndex = 5;
+            this.label10.Text = "Nome do Curso:";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(35, 91);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(51, 15);
+            this.label12.TabIndex = 12;
+            this.label12.Text = "Período:";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.ForeColor = System.Drawing.Color.White;
+            this.label13.Location = new System.Drawing.Point(35, 126);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(83, 15);
+            this.label13.TabIndex = 7;
+            this.label13.Text = "Carga Horária:";
+            // 
             // Frm_ExcluirCursosForDoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.AntiqueWhite;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.Lv_exibeCurso);
-            this.Controls.Add(this.Txb_procurarCurso);
-            this.Controls.Add(this.Btn_excluir);
-            this.Controls.Add(this.Btn_fechar);
-            this.Controls.Add(this.Btn_procurar);
-            this.Controls.Add(this.Lbl_mostraCargaHoraria);
-            this.Controls.Add(this.Lbl_mostraPeriodoCurso);
-            this.Controls.Add(this.Lbl_mostraNomeCurso);
-            this.Controls.Add(this.Lbl_mostraIdCurso);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Name = "Frm_ExcluirCursosForDoc";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_ExcluirCursosForDoc";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private Label label1;
-        private Label label2;
-        private Label label3;
-        private Label label4;
-        private Label label5;
         private Label Lbl_mostraIdCurso;
         private Label Lbl_mostraNomeCurso;
         private Label Lbl_mostraPeriodoCurso;
         private Label Lbl_mostraCargaHoraria;
-        private Button Btn_procurar;
-        private Button Btn_fechar;
-        private Button Btn_excluir;
         private TextBox Txb_procurarCurso;
         private ListView Lv_exibeCurso;
+        private Panel panel1;
+        private Button button1;
+        private Button button2;
+        private Button Btn_procurarCursoAlterar;
+        private Button button3;
+        private Button button4;
+        private Button button5;
+        private Button Btn_minimizar;
+        private Button Btn_FecharApp;
+        private Label label6;
+        private Button Btn_procurar;
+        private Button Btn_fechar;
+        private GroupBox groupBox1;
+        private Button button6;
+        private Button Btn_alterar;
+        private Button button7;
+        private Label label7;
+        private Label label10;
+        private Label label12;
+        private Label label13;
+        private Button Btn_excluir;
     }
 }

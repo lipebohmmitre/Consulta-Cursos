@@ -33,7 +33,13 @@ namespace ConsultaCursos
             Lv_exibeTodosCursos.Columns.Add("Carga Horária", 100, HorizontalAlignment.Right);
         }
 
-        private void Btn_procurarTodosCursos_Click(object sender, EventArgs e)
+
+        private void Btn_fecharTodosCursos_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Btn_procurarTodosCursos_Click_1(object sender, EventArgs e)
         {
             try
             {
@@ -48,7 +54,7 @@ namespace ConsultaCursos
                 while (reader.Read())
                 {
                     string[] row =
-                    {   
+                    {
                         reader.GetString(0),
                         reader.GetString(1),
                         reader.GetString(2),
@@ -65,17 +71,6 @@ namespace ConsultaCursos
             {
                 MessageBox.Show("Algou deu errado: " + ex.Message);
             }
-        }
-
-        private void Btn_fecharTodosCursos_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void Btn_alterar_Click(object sender, EventArgs e)
-        {
-            Frm_AlterarCurso FormAltCurso = new Frm_AlterarCurso();
-            FormAltCurso.ShowDialog();
         }
     }
 }

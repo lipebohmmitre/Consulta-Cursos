@@ -39,7 +39,26 @@ namespace ConsultaCursos
             Lv_exibirAlterarCurso.Columns.Add("Carga Horária", 90, HorizontalAlignment.Right);
         }
 
-        private void Btn_procurarCursoAlterar_Click_1(object sender, EventArgs e)
+
+        private void Lv_exibirAlterarCurso_DoubleClick(object sender, EventArgs e)
+        {
+            Lbl_ExibeId.Text = id;
+            Txb_nomeCursoAlterar.Text = nomeCurso;
+            Lbl_periodo.Text = periodo;
+            Txb_cargaHorariaAlterar.Text = cargaHorariaCurso;
+        }
+
+        private void Frm_AlterarCurso_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_fechar_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Btn_procurarCursoAlterar_Click(object sender, EventArgs e)
         {
             try
             {
@@ -81,7 +100,7 @@ namespace ConsultaCursos
             }
         }
 
-        private void Btn_alterar_Click(object sender, EventArgs e)
+        private void Btn_alterar_Click_1(object sender, EventArgs e)
         {
             try
             {
@@ -110,24 +129,10 @@ namespace ConsultaCursos
                 else
                     MessageBox.Show("Por Favor Digite nos Campos para Alterar o Curso!");
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-        }
-
-
-        private void Lv_exibirAlterarCurso_DoubleClick(object sender, EventArgs e)
-        {
-            Lbl_ExibeId.Text = id;
-            Txb_nomeCursoAlterar.Text = nomeCurso;
-            Lbl_periodo.Text = periodo;
-            Txb_cargaHorariaAlterar.Text = cargaHorariaCurso;
-        }
-
-        private void Btn_fechar_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

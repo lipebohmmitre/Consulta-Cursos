@@ -99,5 +99,10 @@ namespace ConsultaCursos
             Frm_ExlcuirCursoSegLic formExCursoSegLic = new Frm_ExlcuirCursoSegLic();
             formExCursoSegLic.ShowDialog();
         }
+
+        private void Btn_minimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }

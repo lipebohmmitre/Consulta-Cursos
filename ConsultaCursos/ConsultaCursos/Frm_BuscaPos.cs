@@ -32,7 +32,17 @@ namespace ConsultaCursos
             Lv_exibirCursosPos.Columns.Add("Carga Horária", 150, HorizontalAlignment.Right);
         }
 
-        private void Btn_buscarCursosPos_Click(object sender, EventArgs e)
+        private void Frm_BuscaPos_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_fecharPos_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Btn_buscarCursosPos_Click_1(object sender, EventArgs e)
         {
             try
             {
@@ -62,16 +72,6 @@ namespace ConsultaCursos
             {
                 MessageBox.Show("Algou deu errado: " + ex.Message);
             }
-        }
-
-        private void Frm_BuscaPos_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hEIlnLNkhjIQ60vwC5obv74A7ltgiK0ARTmtu36AON1tnT4U5UzLMkGcKALKw27imGF/db1tETcDKWgDVo6K8w==",
+  "dgSpecHash": "Ki3+mazFpK418Ow1gN4KOanmS2TJQ0L9HXvSZAO7Zju15czhj8uRhZaHyYd/t1yhJjHVj3U1Q6alxcCb9aCh2Q==",
   "success": true,
-  "projectFilePath": "C:\\WindowsForms\\proj\\ConsultaCursos\\ConsultaCursos\\ConsultaCursos.csproj",
+  "projectFilePath": "C:\\Users\\ISEED057\\Desktop\\ConsultaCursosSistema\\Consulta-Cursos\\ConsultaCursos\\ConsultaCursos\\ConsultaCursos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ISEED057\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
     "C:\\Users\\ISEED057\\.nuget\\packages\\k4os.compression.lz4\\1.2.6\\k4os.compression.lz4.1.2.6.nupkg.sha512",

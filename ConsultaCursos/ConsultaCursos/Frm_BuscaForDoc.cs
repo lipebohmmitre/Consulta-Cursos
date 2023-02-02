@@ -28,7 +28,12 @@ namespace ConsultaCursos
             
         }
 
-        private void Btn_BuscarCursos_Click(object sender, EventArgs e)
+        private void Btn_FecharForDoc_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Btn_BuscarCursos_Click_1(object sender, EventArgs e)
         {
             try
             {
@@ -49,7 +54,7 @@ namespace ConsultaCursos
                         reader.GetString(2),
                     };
                     var linha_listView = new ListViewItem(row);
-                  
+
                     Lv_ExibirCursos.Items.Add(linha_listView);
                 }
 
@@ -58,11 +63,6 @@ namespace ConsultaCursos
             {
                 MessageBox.Show("Algou deu errado: " + ex.Message);
             }
-        }
-
-        private void Btn_FecharForDoc_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

@@ -22,7 +22,12 @@ namespace ConsultaCursos
             InitializeComponent();
         }
 
-        private void Btn_salvarCursoSegLic_Click(object sender, EventArgs e)
+        private void Btn_fechar_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Btn_salvarCursoSegLic_Click_1(object sender, EventArgs e)
         {
             try
             {
@@ -54,11 +59,6 @@ namespace ConsultaCursos
             {
                 MessageBox.Show("Algo deu errado: " + ex.Message);
             }
-        }
-
-        private void Btn_fechar_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

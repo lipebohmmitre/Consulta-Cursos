@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\WindowsForms\\proj\\ConsultaCursos\\ConsultaCursos\\ConsultaCursos.csproj": {}
+    "C:\\Users\\ISEED057\\Desktop\\ConsultaCursosSistema\\Consulta-Cursos\\ConsultaCursos\\ConsultaCursos\\ConsultaCursos.csproj": {}
   },
   "projects": {
-    "C:\\WindowsForms\\proj\\ConsultaCursos\\ConsultaCursos\\ConsultaCursos.csproj": {
+    "C:\\Users\\ISEED057\\Desktop\\ConsultaCursosSistema\\Consulta-Cursos\\ConsultaCursos\\ConsultaCursos\\ConsultaCursos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\WindowsForms\\proj\\ConsultaCursos\\ConsultaCursos\\ConsultaCursos.csproj",
+        "projectUniqueName": "C:\\Users\\ISEED057\\Desktop\\ConsultaCursosSistema\\Consulta-Cursos\\ConsultaCursos\\ConsultaCursos\\ConsultaCursos.csproj",
         "projectName": "ConsultaCursos",
-        "projectPath": "C:\\WindowsForms\\proj\\ConsultaCursos\\ConsultaCursos\\ConsultaCursos.csproj",
+        "projectPath": "C:\\Users\\ISEED057\\Desktop\\ConsultaCursosSistema\\Consulta-Cursos\\ConsultaCursos\\ConsultaCursos\\ConsultaCursos.csproj",
         "packagesPath": "C:\\Users\\ISEED057\\.nuget\\packages\\",
-        "outputPath": "C:\\WindowsForms\\proj\\ConsultaCursos\\ConsultaCursos\\obj\\",
+        "outputPath": "C:\\Users\\ISEED057\\Desktop\\ConsultaCursosSistema\\Consulta-Cursos\\ConsultaCursos\\ConsultaCursos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ISEED057\\AppData\\Roaming\\NuGet\\NuGet.Config",

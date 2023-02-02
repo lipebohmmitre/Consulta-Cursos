@@ -37,7 +37,20 @@ namespace ConsultaCursos
             Lv_exibeCurso.Columns.Add("Carga Horária", 90, HorizontalAlignment.Right);
         }
 
-        private void Btn_procurar_Click(object sender, EventArgs e)
+        private void Lv_exibeCurso_DoubleClick(object sender, EventArgs e)
+        {
+            Lbl_mostraIdCurso.Text = id;
+            Lbl_mostraNomeCurso.Text = nomeCurso;
+            Lbl_mostraPeriodoCurso.Text = periodo;
+            Lbl_mostraCargaHoraria.Text = cargaHorariaCurso;
+        }
+
+        private void Btn_fechar_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Btn_procurar_Click_1(object sender, EventArgs e)
         {
             try
             {
@@ -71,7 +84,7 @@ namespace ConsultaCursos
 
                     Lv_exibeCurso.Items.Add(linha_listView);
                 }
-                    
+
 
             }
             catch (Exception ex)
@@ -80,15 +93,7 @@ namespace ConsultaCursos
             }
         }
 
-        private void Lv_exibeCurso_DoubleClick(object sender, EventArgs e)
-        {
-            Lbl_mostraIdCurso.Text = id;
-            Lbl_mostraNomeCurso.Text = nomeCurso;
-            Lbl_mostraPeriodoCurso.Text = periodo;
-            Lbl_mostraCargaHoraria.Text = cargaHorariaCurso;
-        }
-
-        private void Btn_excluir_Click(object sender, EventArgs e)
+        private void Btn_excluir_Click_1(object sender, EventArgs e)
         {
             try
             {
@@ -100,16 +105,10 @@ namespace ConsultaCursos
                 MessageBox.Show("Curso Apagado com Sucesso!!!");
                 conexao.Close();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("Algo deu errado: " + ex.Message);
             }
-            
-        }
-
-        private void Btn_fechar_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

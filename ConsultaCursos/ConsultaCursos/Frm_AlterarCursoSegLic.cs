@@ -38,7 +38,25 @@ namespace ConsultaCursos
             Lv_exibirAlterarCurso.Columns.Add("Carga Horária", 90, HorizontalAlignment.Right);
         }
 
-        private void Btn_procurarCursoAlterar_Click(object sender, EventArgs e)
+        private void Frm_AlterarCursoSegLic_DoubleClick(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Lv_exibirAlterarCurso_DoubleClick(object sender, EventArgs e)
+        {
+            Lbl_ExibeId.Text = id;
+            Txb_nomeCursoAlterar.Text = nomeCurso;
+            Lbl_periodo.Text = periodo;
+            Txb_cargaHorariaAlterar.Text = cargaHorariaCurso;
+        }
+
+        private void Btn_fechar_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Btn_procurarCursoAlterar_Click_1(object sender, EventArgs e)
         {
             try
             {
@@ -80,22 +98,22 @@ namespace ConsultaCursos
             }
         }
 
-        private void Btn_alterar_Click(object sender, EventArgs e)
+        private void Btn_alterar_Click_1(object sender, EventArgs e)
         {
             try
             {
-                if(Txb_nomeCursoAlterar.Text != "" && Txb_cargaHorariaAlterar.Text != "")
+                if (Txb_nomeCursoAlterar.Text != "" && Txb_cargaHorariaAlterar.Text != "")
                 {
                     conexao = new MySqlConnection(stringConexao);
                     conexao.Open();
 
                     var consultaCursoExistente = new MySqlCommand($"SELECT COUNT(1) FROM tb_cursos WHERE nome_curso = '{Txb_nomeCursoAlterar.Text}' AND id_periodo = 3;", conexao);
                     var result = consultaCursoExistente.ExecuteScalar();
-                    if(result != null)
+                    if (result != null)
                     {
                         if (Convert.ToInt64(result) >= 1)
                         {
-                           MessageBox.Show("Este Curso já Existe, Favor cadastrar um novo Curso.");
+                            MessageBox.Show("Este Curso já Existe, Favor cadastrar um novo Curso.");
                         }
                         else
                         {
@@ -107,30 +125,12 @@ namespace ConsultaCursos
                     }
                 }
                 else
-                    MessageBox.Show("Por Favor Digite nos Campos para Alterar o Curso!"); 
+                    MessageBox.Show("Por Favor Digite nos Campos para Alterar o Curso!");
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-        }
-
-        private void Btn_fechar_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void Frm_AlterarCursoSegLic_DoubleClick(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void Lv_exibirAlterarCurso_DoubleClick(object sender, EventArgs e)
-        {
-            Lbl_ExibeId.Text = id;
-            Txb_nomeCursoAlterar.Text = nomeCurso;
-            Lbl_periodo.Text = periodo;
-            Txb_cargaHorariaAlterar.Text = cargaHorariaCurso;
         }
     }
 }

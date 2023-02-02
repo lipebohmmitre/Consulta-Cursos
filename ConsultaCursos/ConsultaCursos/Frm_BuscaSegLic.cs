@@ -33,7 +33,12 @@ namespace ConsultaCursos
             Lv_exibirCursosSegLic.Columns.Add("Carga Horária", 150, HorizontalAlignment.Right);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Btn_fecharSegLic_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Btn_buscarCursosSegLic_Click(object sender, EventArgs e)
         {
             try
             {
@@ -63,16 +68,6 @@ namespace ConsultaCursos
             {
                 MessageBox.Show("Algou deu errado: " + ex.Message);
             }
-        }
-
-        private void Frm_BuscaSegLic_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Btn_fecharSegLic_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

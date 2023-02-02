@@ -23,10 +23,16 @@ namespace ConsultaCursos
             InitializeComponent();
         }
 
-        private void Btn_salvarForDoc_Click(object sender, EventArgs e)
+
+        private void Btn_fechar_Click_1(object sender, EventArgs e)
         {
-             try
-             {
+            this.Close();
+        }
+
+        private void Btn_salvarForDoc_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
                 if (Txt_adicionaCursoForDoc.Text != "" && Txt_adicionaCargaHorariaForDoc.Text != "")
                 {
                     conexao = new MySqlConnection(stringConexao);
@@ -50,18 +56,12 @@ namespace ConsultaCursos
                 }
                 else
                     MessageBox.Show("Por Favor, digite os dados");
-                
-             }
-             catch (Exception ex)
-             {
-                 MessageBox.Show("Algo deu errado: " + ex.Message);
-             }
-            
-        }
 
-        private void Btn_fechar_Click(object sender, EventArgs e)
-        {
-            this.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Algo deu errado: " + ex.Message);
+            }
         }
     }
 }

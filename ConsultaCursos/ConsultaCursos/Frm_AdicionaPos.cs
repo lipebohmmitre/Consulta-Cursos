@@ -21,9 +21,14 @@ namespace ConsultaCursos
         public Frm_AdicionaPos()
         {
             InitializeComponent();
-            }
+        }
 
-        private void Btn_salvarPos_Click(object sender, EventArgs e)
+        private void Btn_fechar_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Btn_salvarPos_Click_1(object sender, EventArgs e)
         {
             try
             {
@@ -52,15 +57,10 @@ namespace ConsultaCursos
                     MessageBox.Show("Por Favor, digite os dados");
 
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("Algo deu errado: " + ex.Message);
             }
-        }
-
-        private void Btn_fechar_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

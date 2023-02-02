@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="Frm_AdicionaForDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Frm_AdicionaPos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Frm_AdicionaSegLic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Frm_AlterarCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Frm_AlterarCursoFordoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Frm_AlterarCursoSegLic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Frm_BuscaForDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Frm_BuscaPos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Frm_BuscaSegLic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Frm_BuscaTodosCursos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Frm_ExcluirCursoPos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Frm_ExcluirCursosForDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Frm_ExlcuirCursoSegLic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Frm_Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,17 @@
+C:\WindowsForms\ConsultaCursosDiretorio\ConsultaCursos.exe
+C:\WindowsForms\ConsultaCursosDiretorio\ConsultaCursos.dll
+C:\WindowsForms\ConsultaCursosDiretorio\ConsultaCursos.deps.json
+C:\WindowsForms\ConsultaCursosDiretorio\ConsultaCursos.runtimeconfig.json
+C:\WindowsForms\ConsultaCursosDiretorio\ConsultaCursos.pdb
+C:\WindowsForms\ConsultaCursosDiretorio\Google.Protobuf.dll
+C:\WindowsForms\ConsultaCursosDiretorio\K4os.Compression.LZ4.dll
+C:\WindowsForms\ConsultaCursosDiretorio\K4os.Compression.LZ4.Streams.dll
+C:\WindowsForms\ConsultaCursosDiretorio\K4os.Hash.xxHash.dll
+C:\WindowsForms\ConsultaCursosDiretorio\MySql.Data.dll
+C:\WindowsForms\ConsultaCursosDiretorio\ZstdNet.dll
+C:\WindowsForms\ConsultaCursosDiretorio\comerr64.dll
+C:\WindowsForms\ConsultaCursosDiretorio\gssapi64.dll
+C:\WindowsForms\ConsultaCursosDiretorio\k5sprt64.dll
+C:\WindowsForms\ConsultaCursosDiretorio\krb5_64.dll
+C:\WindowsForms\ConsultaCursosDiretorio\krbcc64.dll
+C:\WindowsForms\ConsultaCursosDiretorio\BouncyCastle.Crypto.dll

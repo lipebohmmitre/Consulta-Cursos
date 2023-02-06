@@ -15,7 +15,7 @@ namespace ConsultaCursos
     {
 
         private MySqlConnection conexao;
-        private string stringConexao = "server=localhost;uid=root;pwd=@Faculdade2022;database=db_cursos";
+        private string stringConexao = "server=192.168.0.50;Port=3306;uid=root;pwd=@Faculdade2022;database=db_cursos";
 
         public Frm_AdicionaSegLic()
         {
